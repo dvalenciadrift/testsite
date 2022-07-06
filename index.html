@@ -832,8 +832,11 @@
   <script type="text/javascript" src="js/bootstrap.js"></script>
 
   <script>
-    window.drift.on("conversation:playbookFired", function (data) {
-      console.log("Playbook fired: " + JSON.stringify(data))
+
+    drift.on('ready', function (api, payload) {
+      window.drift.on("conversation:playbookFired", function (data) {
+        console.log("Playbook fired: " + JSON.stringify(data))
+      })
     })
   </script>
 
