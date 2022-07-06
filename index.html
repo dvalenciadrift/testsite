@@ -833,10 +833,11 @@
 
   <script>
 
-    window.drift.on('ready', function (api, payload) {
-      window.drift.on("conversation:playbookFired", function (data) {
-        console.log("Playbook fired: " + JSON.stringify(data))
-      })
+   drift.on('ready', function (api, payload) {
+    console.log('Drift Ready!!!!')
+      // window.drift.on("conversation:playbookFired", function (data) {
+      //   console.log("Playbook fired: " + JSON.stringify(data))
+      // })
     })
   </script>
 
