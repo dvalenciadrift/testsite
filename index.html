@@ -807,6 +807,12 @@
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script>
+
+    //load after waiting 10000 milliseconds, 10 secs
+    setTimeout(function () {
+      loadDriftWidget()
+    }, 10000)
+
     document.querySelector('.drift-open-chat')
       .addEventListener("click", function () {
         drift.api.startInteraction({ interactionId: 330177 });
